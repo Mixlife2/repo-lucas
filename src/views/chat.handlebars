@@ -1,0 +1,69 @@
+<header class="bg-green-300 text-white text-center p-3">
+    <h1><i class="fas fa-comments"></i> Bienvenidos a nuestro chat</h1>
+</header>
+<main class="container py-3">
+    <section id="chat-container" class="border rounded p-3 bg-light">
+        <article id="messages-log" class="mb-3">
+
+        </article>
+        <form id="form" class="d-flex">
+            <input type="text" id="message-input" class="form-control me-2" placeholder="Escribe tu mensaje aquí...">
+            <button id="send-button" type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Enviar</button>
+        </form>
+    </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/static/js/chat.js"></script>
+
+<style>
+    body {
+    background: linear-gradient(45deg, rgb(255, 255, 255) -52%, #3e8644 81%, #8fcf92 95%);
+    
+    }
+
+#chat-container {
+    background-color: #000000;
+    border-radius: 15px; 
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#messages-log {
+    height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#message-input {
+    flex-grow: 1;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#send-button {
+    border-radius: 50px;
+    border-color: #3483fa;
+    color: #3483fa;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+#send-button:hover {
+    background-color: #3483fa;
+    color: #fff;
+}
+</style>

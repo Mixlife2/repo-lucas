@@ -1,0 +1,61 @@
+<div class="m-5" style="display: flex; justify-content: center;">
+    <img src="/static/images/logo.png" id="logo" style="height: 200px; width: 200px;">
+</div>
+<div class='container py-5'>
+    <div class='row justify-content-center'>
+        <div class='col-md-6'>
+            <h2 class='text-center mb-4'><i class="fas fa-user-plus"></i> Registro</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="first_name"><i class="fas fa-user"></i> Nombre:</label>
+                    <input id="first_name" name="first_name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="last_name"><i class="fas fa-user"></i> Apellido:</label>
+                    <input id="last_name" name="last_name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="ejemplo@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="age"><i class="fas fa-birthday-cake"></i> Edad:</label>
+                    <input type="number" id="age" name="age" class="form-control" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="password"><i class="fas fa-lock"></i> Contraseña:</label>
+                    <input type="password" id="password" name="password" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block mt-3"><i class="fas fa-paper-plane"></i> Enviar</button>
+            </form>
+            <p class='text-center mt-3'>¿Ya tienes una cuenta? <a href="/login"><i class="fas fa-sign-in-alt"></i> Ingresa aquí.</a></p>
+        </div>
+    </div>
+</div>
+<footer class="footer mt-auto py-3 bg-dark text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <p>Disclaimer: Es un demo website. Los productos no estan a la venta. El chat no es real. Es un sitio de muestra.</p>
+                <p>Coder Backend</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/static/js/register.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<style>
+    body {
+        background: linear-gradient(45deg, rgb(255, 255, 255) -52%, #3e8644 81%, #8fcf92 95%);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    footer {
+        margin-top: auto;
+    }
+</style>

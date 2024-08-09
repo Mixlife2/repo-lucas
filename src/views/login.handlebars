@@ -1,0 +1,50 @@
+<div class="m-5" style="display: flex; justify-content: center;">
+    <img src="/static/images/logo.png" id="logo" style="height: 200px; width: 200px;">
+</div>
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+            <h1 class="text-center mb-4"><i class="fas fa-sign-in-alt"></i> Login</h1>
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label class="form-label" for="email"><i class="fas fa-envelope"></i> Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="password"><i class="fas fa-lock"></i> Contraseña:</label>
+                    <input type="password" id="password" name="password" class="form-control" autocomplete="current-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 mb-3"><i class="fas fa-sign-in-alt"></i> Ingresar</button>
+            </form>
+            <a href="/api/sessions/github" class="btn btn-secondary w-100 mb-3"><i class="fab fa-github"></i> Ingresa con GitHub</a>
+            <p class="text-center">No estas registrado? <a href="/register"><i class="fas fa-user-plus"></i> Registrate aqui.</a></p>
+            <p class="text-center">Olvidaste tu contraseña? <a href="/resetPassword"> Restablecer Password.</a></p>
+        </div>
+    </div>
+</div>
+<footer class="footer mt-auto py-3 bg-dark text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <p>Disclaimer: Es un demo website. Los productos no estan a la venta. El chat no es real. Es un sitio de muestra.</p>
+                <p>Coder Backend</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/static/js/login.js"></script>
+
+<style>
+    body {
+        background: linear-gradient(45deg, rgb(255, 255, 255) -52%, #3e8644 81%, #8fcf92 95%);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    footer {
+        margin-top: auto;
+    }
+</style>
